@@ -4,7 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp">
+    android:layout_marginTop="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginRight="5dp">
 
     <ImageView
         android:id="@+id/ivProfileImage"
@@ -50,6 +53,17 @@
         android:linksClickable="true"
         android:layout_toEndOf="@id/ivProfileImage"
         android:text="textBodyhkhkjkhkj" />
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="300dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@id/ivProfileImage"
+        android:layout_below="@id/tvBody"
+        tools:srcCompat="@tools:sample/avatars"
+
+        />
 
 
 </RelativeLayout>
