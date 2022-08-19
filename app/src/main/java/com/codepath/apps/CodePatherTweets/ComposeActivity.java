@@ -3,6 +3,7 @@
 import static com.codepath.apps.CodePatherTweets.TmelineActivity.TAG;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -36,6 +37,13 @@ import okhttp3.Headers;
         setContentView(R.layout.activity_compose);
 
         client=TwitterApp.getRestClient(this);
+
+        Toolbar myToolbar=(Toolbar) findViewById(R.id.toolba);
+        setSupportActionBar(myToolbar);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
         //inflate
         etCompose=findViewById(R.id.etCompose);
         btnTweet=findViewById(R.id.btnTweet);

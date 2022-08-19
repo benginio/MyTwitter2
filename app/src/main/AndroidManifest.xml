@@ -16,7 +16,12 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".ComposeActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".TmelineActivity">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.codepath.apps.CodePatherTweets.TmelineActivity"/>
+           </activity>
 
         <meta-data
             android:name="com.google.android.actions"
